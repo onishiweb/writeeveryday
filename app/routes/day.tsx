@@ -1,12 +1,11 @@
 import type { Route } from "./+types/home";
 import { useState } from "react";
+import { redirect, useParams } from "react-router";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { Modal } from "../components/Modal";
 import { prompts } from "../utils/prompts";
 import { Navigation } from "../components/Navigation/Navigation";
-
-import { getCurrentDayOfYear } from "../utils/currentDayOfYear";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -24,10 +23,18 @@ export const links: Route.LinksFunction = () => [
   { rel: "manifest", href: "/site.webmanifest" },
 ];
 
+export async function loader({ request }: { request: Request }) {
+  const dayNumber = new URL(request.url).pathname.split("/").pop();
+  
+  if (Number(dayNumber) > prompts.length || Number(dayNumber) < 1) {
+    return redirect("/");
+  }
+}
+
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const currentDay = getCurrentDayOfYear();
-  const prompt = prompts[currentDay - 1];
+  const { dayNumber } = useParams();
+  const prompt = prompts[Number(dayNumber) - 1];
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -36,13 +43,13 @@ export default function Home() {
   return <div className="flex flex-col h-screen">
     <Menu />
     <div className="relative p-10 flex-1 flex flex-col justify-center items-center">
-      <h1 className="text-lg font-normal -mt-4 mb-4">Day {currentDay}</h1>
-
+      <h1 className="text-lg font-normal -mt-4 mb-4">Day {dayNumber}</h1>
+      
       <p className="text-2xl md:text-4xl font-medium tracking-wide text-center max-w-[260px] md:max-w-xl">
         {prompt}
       </p>
-      
-      <Navigation currentDay={currentDay} totalPrompts={prompts.length} />
+
+      <Navigation currentDay={Number(dayNumber)} totalPrompts={prompts.length} />
     </div>
 
     <Modal isOpen={isModalOpen} toggleModal={toggleModal} />
