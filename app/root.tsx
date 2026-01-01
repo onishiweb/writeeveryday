@@ -21,6 +21,7 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap",
   },
+  { rel: "preconnect", href: "https://www.googletagmanager.com" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -31,6 +32,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FSEYM2J7D9"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-FSEYM2J7D9');
+            `,
+          }}
+        />
       </head>
       <body>
         {children}
