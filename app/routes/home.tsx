@@ -1,11 +1,11 @@
 import type { Route } from "./+types/home";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { Modal } from "../components/Modal";
 import { prompts } from "../utils/prompts";
 import { Navigation } from "../components/Navigation/Navigation";
-
+import { useNavigate } from "react-router";
 import { getCurrentDayOfYear } from "../utils/currentDayOfYear";
 
 export function meta({}: Route.MetaArgs) {
@@ -27,7 +27,14 @@ export const links: Route.LinksFunction = () => [
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const currentDay = getCurrentDayOfYear();
-  const prompt = prompts[currentDay - 1];
+  const prompt = currentDay > prompts.length ? prompts[prompts.length - 1] : prompts[currentDay - 1];
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    if (currentDay > prompts.length) {
+      navigate(`/day/${prompts.length}`);
+    }
+  }, [currentDay, navigate]);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);

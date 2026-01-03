@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
-import { useState } from "react";
-import { redirect, useParams } from "react-router";
+import { useEffect, useState } from "react";
+import { redirect, useNavigate, useParams } from "react-router";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { Modal } from "../components/Modal";
@@ -34,11 +34,18 @@ export async function loader({ request }: { request: Request }) {
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { dayNumber } = useParams();
-  const prompt = prompts[Number(dayNumber) - 1];
+  const prompt = Number(dayNumber) > prompts.length ? prompts[prompts.length - 1] : prompts[Number(dayNumber) - 1];
+  const navigate = useNavigate();
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   }
+
+  useEffect(() => {
+    if (Number(dayNumber) > prompts.length) {
+      navigate(`/day/${prompts.length}`);
+    }
+  }, [dayNumber, navigate]);
 
   return <div className="flex flex-col h-screen">
     <Menu />
