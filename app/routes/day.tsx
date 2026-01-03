@@ -47,7 +47,7 @@ export default function Home() {
     }
   }, [dayNumber, navigate]);
 
-  return <div className="flex flex-col h-dvh">
+  return <div className="flex flex-col h-lvh">
     <Menu />
     <div className="relative p-10 flex-1 flex flex-col justify-center items-center">
       <h1 className="text-lg font-normal -mt-4 mb-4">Day {dayNumber}</h1>
