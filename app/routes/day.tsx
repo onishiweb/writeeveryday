@@ -26,8 +26,9 @@ export const links: Route.LinksFunction = () => [
 
 export async function loader({ request }: { request: Request }) {
   const dayNumber = new URL(request.url).pathname.split("/").pop();
+  const day = Number(dayNumber);
   
-  if (Number(dayNumber) > prompts.length || Number(dayNumber) < 1) {
+  if (day > prompts.length || day < 1 || Number.isNaN(day)) {
     return redirect("/");
   }
 }
