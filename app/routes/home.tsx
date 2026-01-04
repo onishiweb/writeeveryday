@@ -49,7 +49,7 @@ export default function Home() {
         {prompt}
       </p>
       
-      <Navigation currentDay={currentDay} totalPrompts={prompts.length} />
+      <Navigation currentDay={currentDay} totalPrompts={prompts.length} currentDayOfYear={currentDay} />
     </div>
 
     <Modal isOpen={isModalOpen} toggleModal={toggleModal} />

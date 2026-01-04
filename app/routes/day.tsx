@@ -6,6 +6,7 @@ import { Footer } from "../components/Footer";
 import { Modal } from "../components/Modal";
 import { prompts } from "../utils/prompts";
 import { Navigation } from "../components/Navigation/Navigation";
+import { getCurrentDayOfYear } from "~/utils/currentDayOfYear";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -34,7 +35,8 @@ export async function loader({ request }: { request: Request }) {
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { dayNumber } = useParams();
-  const prompt = Number(dayNumber) > prompts.length ? prompts[prompts.length - 1] : prompts[Number(dayNumber) - 1];
+  const currentDay = getCurrentDayOfYear();
+  const prompt = currentDay > prompts.length ? prompts[prompts.length - 1] : prompts[currentDay - 1];
   const navigate = useNavigate();
 
   const toggleModal = () => {
@@ -42,9 +44,15 @@ export default function Home() {
   }
 
   useEffect(() => {
-    if (Number(dayNumber) > prompts.length) {
+    const day = Number(dayNumber);
+    if (day > prompts.length) {
       navigate(`/day/${prompts.length}`);
     }
+
+    if (day > currentDay) {
+      navigate(`/day/${currentDay}`);
+    }
+
   }, [dayNumber, navigate]);
 
   return <div className="flex flex-col h-svh">
@@ -56,7 +64,7 @@ export default function Home() {
         {prompt}
       </p>
 
-      <Navigation currentDay={Number(dayNumber)} totalPrompts={prompts.length} />
+      <Navigation currentDay={Number(dayNumber)} totalPrompts={prompts.length} currentDayOfYear={currentDay} />
     </div>
 
     <Modal isOpen={isModalOpen} toggleModal={toggleModal} />

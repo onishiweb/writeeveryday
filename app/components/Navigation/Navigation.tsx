@@ -3,17 +3,17 @@ import { Link } from "react-router"
 
 import "./Navigation.css";
 
-export const Navigation = ({ currentDay, totalPrompts }: { currentDay: number, totalPrompts: number }) => {
+export const Navigation = ({ currentDay, totalPrompts, currentDayOfYear }: { currentDay: number, totalPrompts: number, currentDayOfYear: number }) => {
     return (
         <>
         {currentDay > 1 && (
             <Link to={`/day/${currentDay - 1}`} className="navigation-button navigation-button--left">
-            <IconArrow size={32} className="rotate-180" />
+                <IconArrow size={32} className="rotate-180" />
             </Link>
         )}
-        {(currentDay < totalPrompts) && (
+        {(currentDay < totalPrompts && currentDay < currentDayOfYear) && (
             <Link to={`/day/${currentDay + 1}`} className="navigation-button navigation-button--right">
-            <IconArrow size={32} />
+                <IconArrow size={32} />
             </Link>      
         )}
         </>
