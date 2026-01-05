@@ -4,6 +4,7 @@ import { redirect, useNavigate, useParams } from "react-router";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { Modal } from "../components/Modal";
+import { Prompt } from "../components/Prompt";
 import { prompts } from "../utils/prompts";
 import { Navigation } from "../components/Navigation/Navigation";
 import { getCurrentDayOfYear } from "~/utils/currentDayOfYear";
@@ -33,11 +34,12 @@ export async function loader({ request }: { request: Request }) {
   }
 }
 
-export default function Home() {
+export default function Day() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { dayNumber } = useParams();
+  const day = Number(dayNumber);
   const currentDay = getCurrentDayOfYear();
-  const prompt = currentDay > prompts.length ? prompts[prompts.length - 1] : prompts[currentDay - 1];
+  const prompt = prompts[day - 1];
   const navigate = useNavigate();
 
   const toggleModal = () => {
@@ -45,7 +47,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const day = Number(dayNumber);
     if (day > prompts.length) {
       navigate(`/day/${prompts.length}`);
     }
@@ -59,13 +60,8 @@ export default function Home() {
   return <div className="flex flex-col h-svh">
     <Menu />
     <div className="relative p-10 flex-1 flex flex-col justify-center items-center">
-      <h1 className="text-lg font-normal -mt-4 mb-4">Day {dayNumber}</h1>
-      
-      <p className="text-2xl md:text-4xl font-medium tracking-wide text-center max-w-[260px] md:max-w-xl">
-        {prompt}
-      </p>
-
-      <Navigation currentDay={Number(dayNumber)} totalPrompts={prompts.length} currentDayOfYear={currentDay} />
+      <Prompt dayNumber={day} prompt={prompt} />
+      <Navigation currentDay={day} totalPrompts={prompts.length} currentDayOfYear={currentDay} />
     </div>
 
     <Modal isOpen={isModalOpen} toggleModal={toggleModal} />

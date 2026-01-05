@@ -7,6 +7,7 @@ import { prompts } from "../utils/prompts";
 import { Navigation } from "../components/Navigation/Navigation";
 import { useNavigate } from "react-router";
 import { getCurrentDayOfYear } from "../utils/currentDayOfYear";
+import { Prompt } from "~/components/Prompt";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -43,11 +44,7 @@ export default function Home() {
   return <div className="flex flex-col h-svh">
     <Menu />
     <div className="relative p-10 flex-1 flex flex-col justify-center items-center">
-      <h1 className="text-lg font-normal -mt-4 mb-4">Day {currentDay}</h1>
-
-      <p className="text-2xl md:text-4xl font-medium tracking-wide text-center max-w-[260px] md:max-w-xl">
-        {prompt}
-      </p>
+      <Prompt dayNumber={currentDay} prompt={prompt} />
       
       <Navigation currentDay={currentDay} totalPrompts={prompts.length} currentDayOfYear={currentDay} />
     </div>
