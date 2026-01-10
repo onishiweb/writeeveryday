@@ -11,4 +11,15 @@ export const prompts = [
     "Write using the theme 'motivation'",
     "Write a scene from a crime novel where a crime has been discovered",
     // January 11
+    "Write about someone who is nervous about trying something new", // 11
+    "Write using the theme 'anxiety'", // 12
+    "Write a positive review of a new kitchen utensil", // 13
+    "Write a world building scene for a fantasy world from a first person viewpoint", // 14
+    "Write a negative review of a fictional restaurant", // 15
+    "Write a scene with a character deciding their first wish from a genie", // 16
+    "Write using the theme 'warmth'", // 17
+    "Write an argument between two friends about what to do that evening", // 18
+    "Write using the theme 'blue'", // 19
+    "Write about your first time", // 20 
+    // January 21
 ];
