@@ -22,4 +22,18 @@ export const prompts = [
     "Write using the theme 'blue'", // 19
     "Write about your first time", // 20 
     // January 21
+    "Write a story about someone that knows something they shouldn't",
+    "Write about someone preparing for an interview",
+    "Write using the theme 'adventure'",
+    "Write a scene from a romance where a character notices their love interest for the first time",
+    "Write something loud",
+    "Write a day in the life of a cat",
+    "Write about a journey someone is about to embark on",
+    "Write using the theme 'chaos'",
+    "Write about something you have a strong opinion about",
+    "Write a scene from a horror where the characters enter a haunted house",
+    // January 31
+    "Write about the feeling of finally making it through",
+
+    // February
 ];
