@@ -47,4 +47,15 @@ export const prompts = [
     "Write using the theme 'exploration'",
     "Write a dialogue between two characters in the style of a screenplay", // 10
 
+    "Write the death scene of a hero",
+    "Write the death scene of a villain",
+    "Write a story that starts in a restaurant",
+    "Write a review of an app you use a lot",
+    "Write using the theme 'quiet'", // 15
+    "Write a scene set in a dentist waiting room",
+    "Write a romantic scene",
+    "Write a comedic to do list",
+    "Write using the theme 'green'",
+    "Write a character backstory", // 20
+
 ];
