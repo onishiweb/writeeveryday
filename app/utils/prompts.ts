@@ -58,4 +58,26 @@ export const prompts = [
     "Write using the theme 'green'",
     "Write a character backstory", // 20
 
+    "Write an interaction with a car salesman",
+    "Write a product sales pitch for a new fantasy weapon",
+    "Write about a character finding out they have been lied to most of their life",
+    "Write a scene with a twist",
+    "Write using the theme 'rain'", // 25
+    "Write a scene from the opening of a sci-fi novel",
+    "Write a journal post from your or your character's perspective on a good day",
+    "Write something very short", // 28
+
+    // March
+    "Write about something that doesn't taste very good",
+    "Write using the theme 'gold'",
+    "Write about a recent win",
+    "Write a letter to your past self",
+    "Write the climax of a crime novel where the killer is revealed", // 5
+    "Write a scene where characters are travelling somewhere together",
+    "Write using the theme 'grey'",
+    "Write about breakfast",
+    "Write a descriptive scene set at sunset",
+    "Write a scene that starts with someone waking up somewhere unknown", // 10
+
+    "Write about something uncanny in a local neighbourhood"
 ];
