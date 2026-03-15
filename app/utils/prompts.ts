@@ -79,5 +79,36 @@ export const prompts = [
     "Write a descriptive scene set at sunset",
     "Write a scene that starts with someone waking up somewhere unknown", // 10
 
-    "Write about something uncanny in a local neighbourhood"
+    "Write about something uncanny in a local neighbourhood",
+    "Write about someone forgetting something important",
+    "Write a scene with a shocking betrayal",
+    "Write using the theme 'artificial'",
+    "Write a scene from a fantasy novel where magic goes wrong", // 15
+    "Write about someone teaching something to someone",
+    "Write about two people reconnecting after a long time",
+    "Write using only dialogue",
+    "Write the email that didn't need to be sent after the meeting that could have been an email",
+    "Write a complaint letter to a fictional company",
+
+    "Write using the theme 'weight'", // 20
+    "Write a scene from a sci-fi novel where technology fails unexpectedly",
+    "Write using the theme 'silence'",
+    "Write a conversation where both people are right",
+    "Write something that reads like a list but isn't",
+    "Write a villain's origin story", // 25
+    "Write about someone who gets exactly what they wanted and regrets it",
+    "Write about physical exhaustion",
+    "Write about procrastinating on something you actually want to do",
+    "Write a flashback scene",
+
+    "Write a car chase", // 30
+    "Write about a specific smell",
+
+    // April
+    "Write about waiting",
+    "Write a happy ending that feels wrong",
+    "Write a scene told entirely through objects in a room",
+    "Write an internal debate about whether to do something",
+    "Write about the first taste of something extraordinary" // 5
+
 ];
