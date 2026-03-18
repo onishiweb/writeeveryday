@@ -15,6 +15,12 @@ npm run build:budget  # Build then immediately check budget
 
 There are no test commands configured in this project.
 
+## Project description
+
+This project is a Daily Prompt for writer's to use as a way of practicing writing with different themes and prompts.
+
+The prompts I curate are short and very broad, with a lot of room for interpretation. They follow common themes to allow writer's to practice with recognisable prompts each day if they choose to follow along.
+
 ## Architecture
 
 **Write Every Day** is a React Router v7 app (SSR enabled) that shows writers one writing prompt per day of the year.
