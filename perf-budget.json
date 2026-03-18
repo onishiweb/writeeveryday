@@ -1,0 +1,29 @@
+{
+  "comment": "All sizes are gzipped kilobytes. Adjust thresholds as the project evolves.",
+  "budgets": [
+    {
+      "name": "Entry point JS",
+      "description": "Main React + React Router bundle (entry.client-*.js)",
+      "pattern": "entry.client-*.js",
+      "maxSizeKb": 80
+    },
+    {
+      "name": "Total JavaScript",
+      "description": "All JS chunks combined — includes prompts data, components, and framework",
+      "pattern": "*.js",
+      "maxSizeKb": 150
+    },
+    {
+      "name": "Total CSS",
+      "description": "All stylesheets combined",
+      "pattern": "*.css",
+      "maxSizeKb": 15
+    },
+    {
+      "name": "Total client assets",
+      "description": "Everything the browser downloads",
+      "pattern": "*",
+      "maxSizeKb": 170
+    }
+  ]
+}

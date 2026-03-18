@@ -6,7 +6,9 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "budget": "node scripts/check-budget.mjs",
+    "build:budget": "npm run build && npm run budget"
   },
   "dependencies": {
     "@netlify/vite-plugin-react-router": "^2.1.2",

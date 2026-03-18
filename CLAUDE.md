@@ -5,10 +5,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev          # Start dev server with HMR (localhost:5173)
-npm run build        # Production build
-npm start            # Run built app (requires build first)
-npm run typecheck    # Generate React Router types + TypeScript check
+npm run dev           # Start dev server with HMR (localhost:5173)
+npm run build         # Production build
+npm start             # Run built app (requires build first)
+npm run typecheck     # Generate React Router types + TypeScript check
+npm run budget        # Check bundle sizes against perf-budget.json (requires a build)
+npm run build:budget  # Build then immediately check budget
 ```
 
 There are no test commands configured in this project.

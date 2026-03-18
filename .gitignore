@@ -5,3 +5,6 @@
 # React Router
 /.react-router/
 /build/
+
+# Performance budget results (generated, not source)
+.budget-results.json
