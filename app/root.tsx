@@ -10,6 +10,14 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 
+export function meta(): Route.MetaDescriptors {
+  return [
+    { title: "Write Every Day | A daily writing exercise for writers" },
+    { name: "description", content: "Write every day is a daily writing exercise for writers aspiring to write on a regular basis. Whether you're a beginner or an experienced writer, write every day is a great way to get started or stay motivated." },
+    { name: "apple-mobile-web-app-title", content: "Write Daily" },
+  ];
+}
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -21,7 +29,16 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap",
   },
-  { rel: "preconnect", href: "https://www.googletagmanager.com" },
+  {
+    rel: "preconnect",
+    href: "https://www.googletagmanager.com",
+    crossOrigin: "anonymous",
+  },
+  { rel: "icon", type: "image/png", href: "/favicon-96x96.png", sizes: "96x96" },
+  { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+  { rel: "shortcut icon", href: "/favicon.ico" },
+  { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+  { rel: "manifest", href: "/site.webmanifest" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {

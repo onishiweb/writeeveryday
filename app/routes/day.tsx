@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
-import { useEffect, useState } from "react";
-import { redirect, useNavigate, useParams } from "react-router";
+import { useState } from "react";
+import { redirect, useParams } from "react-router";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { Modal } from "../components/Modal";
@@ -9,28 +9,17 @@ import { prompts } from "../utils/prompts";
 import { Navigation } from "../components/Navigation/Navigation";
 import { getCurrentDayOfYear } from "~/utils/currentDayOfYear";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Write Every Day | A daily writing exercise for writers" },
-    { name: "description", content: "Write every day is a daily writing exercise for writers aspiring to write on a regular basis. Whether you're a beginner or an experienced writer, write every day is a great way to get started or stay motivated." },
-    { name: "apple-mobile-web-app-title", content: "Write Daily" },
-  ];
-}
-
-export const links: Route.LinksFunction = () => [
-  { rel: "icon", type: "image/png", href: "/favicon-96x96.png", sizes: "96x96" },
-  { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-  { rel: "shortcut icon", href: "/favicon.ico" },
-  { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
-  { rel: "manifest", href: "/site.webmanifest" },
-];
-
 export async function loader({ request }: { request: Request }) {
   const dayNumber = new URL(request.url).pathname.split("/").pop();
   const day = Number(dayNumber);
-  
+
   if (day > prompts.length || day < 1 || Number.isNaN(day)) {
     return redirect("/");
+  }
+
+  const currentDay = getCurrentDayOfYear();
+  if (day > currentDay) {
+    return redirect(`/day/${currentDay}`);
   }
 }
 
@@ -40,29 +29,17 @@ export default function Day() {
   const day = Number(dayNumber);
   const currentDay = getCurrentDayOfYear();
   const prompt = prompts[day - 1];
-  const navigate = useNavigate();
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   }
 
-  useEffect(() => {
-    if (day > prompts.length) {
-      navigate(`/day/${prompts.length}`);
-    }
-
-    if (day > currentDay) {
-      navigate(`/day/${currentDay}`);
-    }
-
-  }, [dayNumber, navigate]);
-
   return <div className="flex flex-col h-svh">
     <Menu />
-    <div className="relative p-10 flex-1 flex flex-col justify-center items-center">
+    <main className="relative p-10 flex-1 flex flex-col justify-center items-center">
       <Prompt dayNumber={day} prompt={prompt} />
       <Navigation currentDay={day} totalPrompts={prompts.length} currentDayOfYear={currentDay} />
-    </div>
+    </main>
 
     <Modal isOpen={isModalOpen} toggleModal={toggleModal} />
     <Footer toggleModal={toggleModal} />
