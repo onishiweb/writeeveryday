@@ -109,6 +109,35 @@ export const prompts = [
     "Write a happy ending that feels wrong",
     "Write a scene told entirely through objects in a room",
     "Write an internal debate about whether to do something",
-    "Write about the first taste of something extraordinary" // 5
+    "Write about the first taste of something extraordinary", // 5
 
+    "Write about someone in a position of authority they didn't want",
+    "Write using the theme 'pride'",
+    "Write a scene where someone refuses an order",
+    "Write about a childhood memory that keeps coming back",
+    "Write using the theme 'need'", // 10
+
+    "Write a scene with a specific setting that tells the story of that place",
+    "Write using the theme 'jealousy'",
+    "Write a myth or folktale",
+    "Write about someone who has more power than they realise",
+    "Write using the theme 'shame'", // 15
+
+    "Write a scene where money fixes everything",
+    "Write about a family tradition",
+    "Write using the theme 'obsession'",
+    "Write a scene where a stranger changes someone's day",
+    "Write about a moral dilemma with no good answer", // 20
+
+    "Write using the theme 'home'",
+    "Write about nature — an animal, a landscape, or a moment outside",
+    "Write about someone failing at something they care about",
+    "Write using the theme 'nostalgia'",
+    "Write a fairy tale that subverts an expected ending", // 25
+
+    "Write about work — the tedium or the meaning of it",
+    "Write using the theme 'faith'",
+    "Write about the body — not pain or exhaustion, but something else",
+    "Write a scene where someone finally tells the truth",
+    "Write about what it means to be at the end of something", // 30
 ];
