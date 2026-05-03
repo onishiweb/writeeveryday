@@ -140,4 +140,43 @@ export const prompts = [
     "Write about the body — not pain or exhaustion, but something else",
     "Write a scene where someone finally tells the truth",
     "Write about what it means to be at the end of something", // 30
+
+    // May
+    "Write about moving house",
+    "Write using the theme 'belonging'",
+    "Write a scene where someone returns to a place from their past",
+    "Write a letter you never intended to send",
+    "Write using the theme 'hunger'", // 5
+
+    "Write a scene from a fantasy novel where something ordinary turns out to be magical",
+    "Write about a neighbour you've never spoken to",
+    "Write using the theme 'shelter'",
+    "Write about a family gathering that surprises everyone",
+    "Write using the theme 'ordinary'", // 10
+
+    "Write a property listing for somewhere that couldn't be sold",
+    "Write about the moment two people start to feel like a team",
+    "Write using the theme 'distance'",
+    "Write about finding something you thought was lost",
+    "Write about slowly finding your footing somewhere new", // 15
+
+    "Write a scene from a sci-fi novel about someone who has never seen Earth",
+    "Write about a sound that means you're home",
+    "Write using the theme 'loss'",
+    "Write about a character without a fixed address",
+    "Write a day in the life of someone who has just arrived somewhere new", // 20
+
+    "Write a scene using only what can be seen from one fixed point",
+    "Write about two people from the same place who turned out very differently",
+    "Write about packing for somewhere you can't wait to get to",
+    "Write using the theme 'return'",
+    "Write about somewhere you keep meaning to go back to", // 25
+
+    "Write a scene where a character finds it hard to explain where they're from",
+    "Write about the first day that feels like summer is coming",
+    "Write a scene in reverse — from its ending back to its beginning",
+    "Write using the theme 'absence'",
+    "Write about claiming something as your own", // 30
+    
+    "Write about what takes root",
 ];
