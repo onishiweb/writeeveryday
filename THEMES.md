@@ -1,6 +1,6 @@
 # Prompt Themes Analysis
 
-Analysis of all 96 prompts (January–April) grouped by theme, with gaps identified and future theme suggestions.
+Analysis of all 213 prompts (January–July) grouped by theme, with gaps identified and future theme suggestions.
 
 ## Existing Themes
 
@@ -123,8 +123,8 @@ Assigning one theme per month gives writers a sense of arc across the year and m
 | March | Weight & Consequence *(existing)* |
 | April | Power |
 | May | Home |
-| June | The Body |
-| July | Strangers |
+| June | The Body *(added)* |
+| July | Strangers *(added)* |
 | August | Nature |
 | September | Work & Ambition |
 | October | Folklore & Myth |

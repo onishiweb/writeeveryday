@@ -179,4 +179,80 @@ export const prompts = [
     "Write about claiming something as your own", // 30
     
     "Write about what takes root",
+
+    // June
+    "Write about waking up in a body that feels different from yesterday",
+    "Write using the theme 'skin'",
+    "Write about desire — wanting something you can feel in your body",
+    "Write a scene where a character is acutely aware of their hands",
+    "Write using the theme 'breath'", // 5
+
+    "Write about someone learning to rest",
+    "Write a scene where the body knows something before the mind does",
+    "Write the story behind a scar",
+    "Write using the theme 'fever'",
+    "Write a scene that begins the moment someone starts crying", // 10
+
+    "Write about being too hot or too cold",
+    "Write a scene about learning a physical skill for the first time",
+    "Write about illness from the perspective of someone caring for another person",
+    "Write about appetite — the kind that has nothing to do with food",
+    "Write a scene where a character cannot stop laughing", // 15
+
+    "Write about something your body does without being asked",
+    "Write a scene where tenderness is the hardest thing",
+    "Write a scene about a runner who stops",
+    "Write about the first moment someone felt old",
+    "Write using the theme 'numb'", // 20
+
+    "Write a scene told entirely through what a character can feel but not see",
+    "Write about ageing — one small, specific sign of it",
+    "Write an ordinary pleasure — physical, specific, and intense",
+    "Write a scene in which the body refuses",
+    "Write using the theme 'pulse'", // 25
+
+    "Write a horror scene that uses physical sensation rather than fear",
+    "Write about what rest actually feels like when you finally get it",
+    "Write about recovery — what it takes, and what changes",
+    "Write a scene from a sci-fi novel where a character inhabits a body that isn't theirs",
+    "Write about carrying something heavy for a long time", // 30
+
+    // July
+    "Write a scene between two strangers stuck in the same place",
+    "Write about overhearing a conversation that changes your day",
+    "Write a scene set on public transport",
+    "Write about someone whose face you keep seeing",
+    "Write using the theme 'recognition'", // 5
+
+    "Write about a stranger you have thought about ever since",
+    "Write a scene where two strangers have to work together",
+    "Write about the last person to use this space before you",
+    "Write using the theme 'anonymous'",
+    "Write a scene set in a crowd", // 10
+
+    "Write about what you imagine someone's life to be",
+    "Write using the theme 'encounter'",
+    "Write a scene where a stranger is the only witness",
+    "Write about someone sitting alone in a public place",
+    "Write a scene from a crime novel from the perspective of a witness who knows nothing", // 15
+
+    "Write using the theme 'invisible'",
+    "Write about a conversation that ends before it should",
+    "Write a scene where a character is watched by someone they don't know",
+    "Write about a day where every interaction is with someone you've never met",
+    "Write about the kindness of someone whose name you never got", // 20
+
+    "Write a scene from the perspective of a background character in someone else's story",
+    "Write about a face you will never forget",
+    "Write about a missed connection",
+    "Write a scene set in an airport or station",
+    "Write about the version of you that strangers see", // 25
+
+    "Write a scene where two strangers realise they know the same person",
+    "Write about someone returning to a city they once knew as a stranger",
+    "Write using the theme 'unfamiliar'",
+    "Write a scene where someone is recognised by someone they don't remember",
+    "Write about what you would say to someone you'll never see again", // 30
+
+    "Write about what it means to become known",
 ];
