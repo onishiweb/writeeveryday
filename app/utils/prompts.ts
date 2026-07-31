@@ -255,4 +255,80 @@ export const prompts = [
     "Write about what you would say to someone you'll never see again", // 30
 
     "Write about what it means to become known",
+
+    // August
+    "Write about a garden that's been left to grow wild",
+    "Write using the theme 'wilderness'",
+    "Write about an animal that doesn't belong where it's found",
+    "Write a scene set entirely outdoors, with no dialogue",
+    "Write using the theme 'growth'", // 5
+
+    "Write about the last swim of the summer",
+    "Write a scene from a fantasy novel where the forest is alive",
+    "Write about a storm rolling in",
+    "Write using the theme 'wild'",
+    "Write a nature documentary narration for something ordinary", // 10
+
+    "Write about someone who talks to plants",
+    "Write a scene set at dawn in a forest",
+    "Write using the theme 'migration'",
+    "Write about a tree that has seen generations of the same family",
+    "Write about the smell after rain", // 15
+
+    "Write a scene from a sci-fi novel where nature has reclaimed a city",
+    "Write about keeping bees",
+    "Write using the theme 'drought'",
+    "Write about a river that changes course",
+    "Write a day in the life of a bird", // 20
+
+    "Write about someone lost in unfamiliar countryside",
+    "Write using the theme 'bloom'",
+    "Write a scene where a character notices the seasons changing for the first time in years",
+    "Write about foraging for something",
+    "Write a horror scene set in the woods at night", // 25
+
+    "Write using the theme 'roots'",
+    "Write about an animal encounter that changes someone",
+    "Write a scene set on a mountain",
+    "Write about the first frost",
+    "Write using the theme 'moonlight'", // 30
+
+    "Write about what it means to belong to a landscape",
+
+    // September
+    "Write about someone's first day at a new job",
+    "Write using the theme 'ambition'",
+    "Write a scene set in an office after everyone else has gone home",
+    "Write about a mentor who taught you more than they realised",
+    "Write using the theme 'burnout'", // 5
+
+    "Write a resignation letter that says more than it should",
+    "Write about someone who is excellent at a job they hate",
+    "Write a scene from a crime novel set inside a workplace",
+    "Write using the theme 'promotion'",
+    "Write about the apprentice surpassing the master", // 10
+
+    "Write a performance review for a fictional character",
+    "Write about someone starting a business that shouldn't work",
+    "Write using the theme 'grind'",
+    "Write a scene where two colleagues become rivals",
+    "Write about the job someone always wanted but never got", // 15
+
+    "Write a scene from a fantasy novel where a character trains under a demanding master",
+    "Write using the theme 'legacy'",
+    "Write about a factory, farm, or workplace at the end of a long shift",
+    "Write a scene where someone is fired unfairly",
+    "Write about a skill passed down through a family trade", // 20
+
+    "Write using the theme 'reinvention'",
+    "Write a scene set at a job interview that goes wrong",
+    "Write about the satisfaction of finishing physical labour",
+    "Write a scene from a sci-fi novel where a character's job is done by a machine now",
+    "Write using the theme 'craft'", // 25
+
+    "Write about someone who works alone",
+    "Write a scene where ambition costs someone something they didn't expect",
+    "Write about the last day at a job someone loved",
+    "Write using the theme 'purpose'",
+    "Write about starting over in a new career", // 30
 ];
