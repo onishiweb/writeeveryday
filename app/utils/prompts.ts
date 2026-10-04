@@ -1,46 +1,50 @@
 export const prompts = [
-    // January
+    // January — New Beginnings
     "Write about someone celebrating something new in their life.",
     "Write about a hard choice someone has to make about leaving",
     "Write something using the theme 'completion'",
     "Write about someone not wanting to do something the following day",
-    "Write using the theme 'laziness'",
+    "Write using the theme 'laziness'", // 5
+
     "Write a story centered around an unwanted gift",
     "Write using the theme 'loneliness'",
     "Write a scene from a fantasy novel where a character is discovering a new power",
     "Write using the theme 'motivation'",
-    "Write a scene from a crime novel where a crime has been discovered", 
-    
-    "Write about someone who is nervous about trying something new", // January 11
+    "Write a scene from a crime novel where a crime has been discovered", // 10
+
+    "Write about someone who is nervous about trying something new",
     "Write using the theme 'anxiety'",
     "Write a positive review of a new kitchen utensil",
     "Write a world building scene for a fantasy world from a first person viewpoint",
     "Write a negative review of a fictional restaurant", // 15
+
     "Write a scene with a character deciding their first wish from a genie",
     "Write using the theme 'warmth'",
     "Write an argument between two friends about what to do that evening",
     "Write using the theme 'blue'",
-    "Write about your first time", // 20 
-    
-    "Write a story about someone that knows something they shouldn't", // January 21
+    "Write about your first time", // 20
+
+    "Write a story about someone that knows something they shouldn't",
     "Write about someone preparing for an interview",
     "Write using the theme 'adventure'",
     "Write a scene from a romance where a character notices their love interest for the first time",
     "Write something loud", // 25
+
     "Write a day in the life of a cat",
     "Write about a journey someone is about to embark on",
     "Write using the theme 'chaos'",
     "Write about something you have a strong opinion about",
     "Write a scene from a horror where the characters enter a haunted house", // 30
-    
-    "Write about the feeling of finally making it through", // January 31
 
-    // February
+    "Write about the feeling of finally making it through",
+
+    // February — Companionship & Love
     "Write a story that has to do with a particular time period",
     "Write a recipe",
     "Write a day in the life of a dog",
     "Write using the theme 'companionship'",
     "Write a fight scene", // 5
+
     "Write a scene that's set on a spaceship",
     "Write about grief",
     "Write your thoughts about social media",
@@ -52,6 +56,7 @@ export const prompts = [
     "Write a story that starts in a restaurant",
     "Write a review of an app you use a lot",
     "Write using the theme 'quiet'", // 15
+
     "Write a scene set in a dentist waiting room",
     "Write a romantic scene",
     "Write a comedic to do list",
@@ -63,16 +68,18 @@ export const prompts = [
     "Write about a character finding out they have been lied to most of their life",
     "Write a scene with a twist",
     "Write using the theme 'rain'", // 25
+
     "Write a scene from the opening of a sci-fi novel",
     "Write a journal post from your or your character's perspective on a good day",
-    "Write something very short", // 28
+    "Write something very short",
 
-    // March
+    // March — Weight & Consequence
     "Write about something that doesn't taste very good",
     "Write using the theme 'gold'",
     "Write about a recent win",
     "Write a letter to your past self",
     "Write the climax of a crime novel where the killer is revealed", // 5
+
     "Write a scene where characters are travelling somewhere together",
     "Write using the theme 'grey'",
     "Write about breakfast",
@@ -84,27 +91,28 @@ export const prompts = [
     "Write a scene with a shocking betrayal",
     "Write using the theme 'artificial'",
     "Write a scene from a fantasy novel where magic goes wrong", // 15
+
     "Write about someone teaching something to someone",
     "Write about two people reconnecting after a long time",
     "Write using only dialogue",
-    "Write the email that didn't need to be sent after the meeting that could have been an email",
     "Write a complaint letter to a fictional company",
-
     "Write using the theme 'weight'", // 20
+
     "Write a scene from a sci-fi novel where technology fails unexpectedly",
     "Write using the theme 'silence'",
     "Write a conversation where both people are right",
     "Write something that reads like a list but isn't",
     "Write a villain's origin story", // 25
+
     "Write about someone who gets exactly what they wanted and regrets it",
     "Write about physical exhaustion",
     "Write about procrastinating on something you actually want to do",
     "Write a flashback scene",
-
     "Write a car chase", // 30
+
     "Write about a specific smell",
 
-    // April
+    // April — Power
     "Write about waiting",
     "Write a happy ending that feels wrong",
     "Write a scene told entirely through objects in a room",
@@ -141,7 +149,7 @@ export const prompts = [
     "Write a scene where someone finally tells the truth",
     "Write about what it means to be at the end of something", // 30
 
-    // May
+    // May — Home
     "Write about moving house",
     "Write using the theme 'belonging'",
     "Write a scene where someone returns to a place from their past",
@@ -177,10 +185,10 @@ export const prompts = [
     "Write a scene in reverse — from its ending back to its beginning",
     "Write using the theme 'absence'",
     "Write about claiming something as your own", // 30
-    
+
     "Write about what takes root",
 
-    // June
+    // June — The Body
     "Write about waking up in a body that feels different from yesterday",
     "Write using the theme 'skin'",
     "Write about desire — wanting something you can feel in your body",
@@ -217,7 +225,7 @@ export const prompts = [
     "Write a scene from a sci-fi novel where a character inhabits a body that isn't theirs",
     "Write about carrying something heavy for a long time", // 30
 
-    // July
+    // July — Strangers
     "Write a scene between two strangers stuck in the same place",
     "Write about overhearing a conversation that changes your day",
     "Write a scene set on public transport",
@@ -256,7 +264,7 @@ export const prompts = [
 
     "Write about what it means to become known",
 
-    // August
+    // August — Nature
     "Write about a garden that's been left to grow wild",
     "Write using the theme 'wilderness'",
     "Write about an animal that doesn't belong where it's found",
@@ -295,7 +303,7 @@ export const prompts = [
 
     "Write about what it means to belong to a landscape",
 
-    // September
+    // September — Work & Ambition
     "Write about someone's first day at a new job",
     "Write using the theme 'ambition'",
     "Write a scene set in an office after everyone else has gone home",
@@ -331,4 +339,119 @@ export const prompts = [
     "Write about the last day at a job someone loved",
     "Write using the theme 'purpose'",
     "Write about starting over in a new career", // 30
+
+    // October — Fear & Folklore
+    "Write about a noise in the house that nobody else hears",
+    "Write using the theme 'dread'",
+    "Write a scene where a character refuses to look behind them",
+    "Write about a local superstition that turns out to be true",
+    "Write using the theme 'dark'", // 5
+
+    "Write a scene set in a cellar, attic, or somewhere nobody goes",
+    "Write about something a child is afraid of that adults have forgotten",
+    "Write using the theme 'omen'",
+    "Write a ghost story in under 200 words",
+    "Write about the fear of being found out", // 10
+
+    "Write a modern retelling of a legend from where you grew up",
+    "Write using the theme 'threshold'",
+    "Write about an object that should have been thrown away",
+    "Write a scene from a horror novel told from the monster's point of view",
+    "Write using the theme 'mask'", // 15
+
+    "Write about someone who is brave in a way nobody notices",
+    "Write a scene where the lights go out and stay out",
+    "Write using the theme 'hollow'",
+    "Write about a photograph that shouldn't exist",
+    "Write a scene set in fog", // 20
+
+    "Write about a phobia from the inside",
+    "Write using the theme 'warning'",
+    "Write a scene where someone is told not to open a door, and opens it",
+    "Write about the last house on the road",
+    "Write using the theme 'whisper'", // 25
+
+    "Write a scene from a crime novel where the detective is afraid",
+    "Write about a tradition that has stopped making sense",
+    "Write using the theme 'changeling'",
+    "Write a cautionary tale in the style of one told to children",
+    "Write about a creature from local legend that someone claims to have seen", // 30
+
+    "Write about what someone becomes when nobody is watching",
+
+    // November — Memory & Family
+    "Write about a memory you're no longer sure is yours",
+    "Write using the theme 'dust'",
+    "Write a scene where two people remember the same evening differently",
+    "Write about an object that holds forty years in it",
+    "Write using the theme 'forgetting'", // 5
+
+    "Write a scene set in a room that hasn't changed in decades",
+    "Write about someone who writes everything down",
+    "Write using the theme 'archive'",
+    "Write about a name that nobody says anymore",
+    "Write a scene from a sci-fi novel where a memory can be bought", // 10
+
+    "Write about a letter found long after it was written",
+    "Write using the theme 'remembrance'",
+    "Write about the oldest person you have known",
+    "Write a scene where a character visits a grave",
+    "Write using the theme 'rust'", // 15
+
+    "Write about a song that pulls someone backwards",
+    "Write a scene where siblings divide up a parent's belongings",
+    "Write using the theme 'inheritance'",
+    "Write about a family story that has been told wrong for years",
+    "Write a scene set in a museum after closing", // 20
+
+    "Write a scene between a grandparent and grandchild who have nothing in common",
+    "Write using the theme 'patience'",
+    "Write about the last time someone did something without knowing it was the last time",
+    "Write a scene from a fantasy novel about a character who remembers a world nobody else does",
+    "Write using the theme 'ruins'", // 25
+
+    "Write about a habit someone inherited from a parent",
+    "Write a scene where a character is told the truth about their own childhood",
+    "Write using the theme 'time'",
+    "Write about a town that is slowly emptying",
+    "Write about what you want to be remembered for", // 30
+
+    // December — Endings & Beginnings
+    "Write about leaving a party before it ends",
+    "Write using the theme 'light'",
+    "Write about a goodbye that went better than expected",
+    "Write about the last year a family all fits in one house",
+    "Write using the theme 'generosity'", // 5
+
+    "Write a scene set in a house full of people where someone feels alone",
+    "Write about a meal shared between people who shouldn't be at the same table",
+    "Write using the theme 'candlelight'",
+    "Write about someone working while everyone else celebrates",
+    "Write a scene set in a queue", // 10
+
+    "Write about letting a friendship end gracefully",
+    "Write using the theme 'forgiveness'",
+    "Write a scene from a fantasy novel set in deep winter",
+    "Write about the quietest day of the year",
+    "Write using the theme 'snow'", // 15
+
+    "Write the final entry in a diary kept for years",
+    "Write about a kindness given to a stranger in December",
+    "Write using the theme 'hope'",
+    "Write a scene where someone comes home after a long time away",
+    "Write about the longest night", // 20
+
+    "Write about something ending well",
+    "Write using the theme 'gathering'",
+    "Write a scene told entirely in the kitchen during a celebration",
+    "Write about a promise someone intends to keep this time",
+    "Write using the theme 'midnight'", // 25
+
+    "Write about the strange empty days between the celebration and the new year",
+    "Write a scene where a character takes stock of a year",
+    "Write using the theme 'resolution'",
+    "Write about what you are leaving behind",
+    "Write using the theme 'beginning'", // 30
+
+    "Write about the person you'll be a year from now",
 ];
